@@ -1,15 +1,21 @@
-.shrikhand-regular {
-   font-family: "Shrikhand", serif;
-   font-weight: 400;
-   font-style: normal;
+/*********Général*******/
+
+* {
+   font-family: roboto, sans-serif;
 }
+
+a {
+   text-decoration: none;
+}
+
 
 body {
    font-size: 16px;
-   padding: 10px;
-   font-family: roboto, sans-serif;
+   margin: 0;
 
 }
+
+/***********Header*******/
 
 header {
    display: flex;
@@ -22,8 +28,21 @@ header {
 .header-logo {
    font-family: shrikhand, cursive;
    font-size: 30px;
-   text-decoration: none;
    color: #101010;
+}
+
+.position {
+   background-color: #eaeaea;
+   color: #353535;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.position-text {
+   font-size: 16px;
+
 }
 
 
