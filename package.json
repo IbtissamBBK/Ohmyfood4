@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Oh my food projet 4",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/styles.scss styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
