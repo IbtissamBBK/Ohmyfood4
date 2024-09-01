@@ -147,6 +147,8 @@ header {
 .restaurants-cards {
    display: flex;
    flex-direction: column;
+   gap: 20px;
+   
 }
 
 .card {
@@ -180,18 +182,20 @@ header {
 .card-content {
    display: flex;
    flex-direction: row;
-   align-items: center;
    padding: 0px 40px 20px 10px;
 }
 
 .card-icon {
    font-size: 24px;
-
 }
 
 .btn-heart {
-   position: relative;
-   display: flex;
-   justify-content: center;
-   align-items: center; 
+   cursor: pointer;
+   position: absolute;
+   right: 32px;
+   bottom: 54px;
+
+
 }
+
+
