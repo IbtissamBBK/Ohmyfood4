@@ -78,7 +78,7 @@ header {
 
 /*********Fonction***********/
 .fonction {
-  padding: 50px 20px;
+  padding: 30px 20px;
 }
 
 .fonction-steps {
@@ -86,6 +86,9 @@ header {
   gap: 25px;
   display: flex;
   flex-direction: column;
+  padding: 15px 0 0;
+  margin: 0;
+  justify-content: space-between;
 }
 
 .fonction-step {
@@ -94,6 +97,82 @@ header {
   font-weight: 500;
   padding: 28px 36px;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
+}
+
+.fonction-number {
+  background-color: #9356DC;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+  padding: 4px 9px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.fonction-icon {
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+.fonction-step:hover .fonction-icon {
+  color: #9356DC;
+}
+
+/***********Restaurant***********/
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 30px 20px;
+}
+
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 20px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.card-image {
+  display: flex;
+}
+
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  height: 175px;
+}
+
+.card-new {
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 3px;
+  padding: 6px 12px;
+  position: absolute;
+  right: 30px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 40px 20px 10px;
+}
+
+.card-icon {
+  font-size: 24px;
+}
+
+.btn-heart {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
