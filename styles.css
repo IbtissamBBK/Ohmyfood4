@@ -155,24 +155,46 @@ header {
   border-radius: 3px;
   padding: 6px 12px;
   position: absolute;
-  right: 30px;
+  right: 22px;
+  top: 13px;
 }
 
 .card-content {
   display: flex;
   flex-direction: row;
-  padding: 0px 40px 20px 10px;
+  padding: 20px 30px 20px 15px;
+  justify-content: space-between;
 }
 
-.card-icon {
-  font-size: 24px;
+.card-title {
+  margin: 0;
 }
 
-.btn-heart {
-  cursor: pointer;
-  position: absolute;
-  right: 32px;
-  bottom: 54px;
+.card-subtitle {
+  margin: 0;
+}
+
+/***********Footer*************/
+.footer {
+  background-color: #353535;
+  padding: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-logo {
+  font-family: shrikhand, cursive;
+}
+
+.footer-list {
+  list-style-type: none;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
