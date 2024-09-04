@@ -1,5 +1,7 @@
+@import "utils/variables";
 
 /*********Général*******/
+
 
 * {
    font-family: roboto, sans-serif;
@@ -12,7 +14,6 @@ a {
 
 body {
    margin: 0;
-
 }
 
 
@@ -21,9 +22,9 @@ body {
 header {
    display: flex;
    justify-content: center;
-   height: 63px;
+   padding: 1rem;
    align-items: center;
-   background-color: #ffff;
+   background-color: $secondary-color;
    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
    position: relative;
 }
@@ -40,7 +41,7 @@ header {
 .position {
    background-color: #eaeaea;
    color: #353535;
-   height: 50px;
+   padding: 1rem;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -59,7 +60,7 @@ header {
 /**********Intro***********/
 .intro {
    padding: 40px 20px 60px;
-   background-color: #f6f6f6;
+   background-color: $background-color;
    text-align: center;
 }
 
@@ -75,7 +76,7 @@ header {
 }
 
 .btn {
-   color: white;
+   color: $secondary-color;
    font-weight: 400;
    padding: 16px 22px;
    border-radius: 25px;
@@ -101,7 +102,7 @@ header {
 
 
 .fonction-step {
-   background-color: #f6f6f6;
+   background-color: $background-color;
    border-radius: 20px;
    font-weight: 500;
    padding: 28px 36px;
@@ -110,8 +111,8 @@ header {
 }
 
 .fonction-number {
-   background-color: #9356DC;
-   color: #fff;
+   background-color: $primary-color;
+   color: $secondary-color;
    position: absolute;
    left: 10px;
    padding: 4px 9px;
@@ -127,14 +128,14 @@ header {
 }
 
 .fonction-step:hover .fonction-icon {
-   color: #9356DC;
+   color: $primary-color;
 }
 
 
 /***********Restaurant***********/
 
 .restaurants {
-   background-color: #f6f6f6;
+   background-color: $background-color;
    padding: 30px 20px;
 
 }
@@ -148,7 +149,7 @@ header {
 
 .card {
    border-radius: 15px;
-   background-color: #fff;
+   background-color: $secondary-color;
    text-decoration: none;
    color: #000;
    position: relative;
@@ -198,14 +199,14 @@ header {
 
 }
 .footer a {
-   color: #fff;
-   text-decoration: none;
+   color: $secondary-color;
 }
 
 
 .footer-logo {
    font-family: shrikhand, cursive;
 }
+
 
 .footer-list {
    list-style-type: none;
