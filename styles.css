@@ -56,11 +56,9 @@ header {
   background-color: #f6f6f6;
   text-align: center;
 }
-
 .intro h1 {
   margin: 0;
 }
-
 .intro p {
   font-weight: 300;
   font-size: 18px;
@@ -98,6 +96,9 @@ header {
   padding: 28px 36px;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
+.fonction-step:hover .fonction-icon {
+  color: #9356DC;
+}
 
 .fonction-number {
   background-color: #9356DC;
@@ -112,10 +113,6 @@ header {
 .fonction-icon {
   font-weight: 900;
   margin-right: 20px;
-}
-
-.fonction-step:hover .fonction-icon {
-  color: #9356DC;
 }
 
 /***********Restaurant***********/
@@ -141,7 +138,6 @@ header {
 .card-image {
   display: flex;
 }
-
 .card-image img {
   width: 100%;
   object-fit: cover;
@@ -179,7 +175,6 @@ header {
   background-color: #353535;
   padding: 20px;
 }
-
 .footer a {
   color: #fff;
 }

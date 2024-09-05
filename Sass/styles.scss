@@ -4,7 +4,7 @@
 
 
 * {
-   font-family: roboto, sans-serif;
+   font-family: $font-family_1;
 }
 
 a {
@@ -15,7 +15,6 @@ a {
 body {
    margin: 0;
 }
-
 
 /***********Header*******/
 
@@ -30,17 +29,17 @@ header {
 }
 
 .header-logo {
-   font-family: shrikhand, cursive;
+   font-family: $font-family_2;
    font-size: 30px;
-   color: #101010;
+   color: $color_1;
 }
 
 /*********************Main********************/
 
 /*********Position********/
 .position {
-   background-color: #eaeaea;
-   color: #353535;
+   background-color: $background-color_2;
+   color: $color_2;
    padding: 1rem;
    display: flex;
    justify-content: center;
@@ -59,20 +58,17 @@ header {
 
 /**********Intro***********/
 .intro {
-   padding: 40px 20px 60px;
-   background-color: $background-color;
-   text-align: center;
-}
-
-.intro h1 {
-   margin: 0;
-}
-
-.intro p {
-   font-weight: 300;
-   font-size: 18px;
-   padding-bottom: 25px;
-
+	padding: 40px 20px 60px;
+	background-color: $background-color;
+	text-align: center;
+	h1 {
+		margin: 0;
+	}
+	p {
+		font-weight: 300;
+		font-size: 18px;
+		padding-bottom: 25px;
+	}
 }
 
 .btn {
@@ -102,12 +98,16 @@ header {
 
 
 .fonction-step {
-   background-color: $background-color;
-   border-radius: 20px;
-   font-weight: 500;
-   padding: 28px 36px;
-   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, .07);
-
+	background-color: $background-color;
+	border-radius: 20px;
+	font-weight: 500;
+	padding: 28px 36px;
+	box-shadow: 0 4px 8px 5px rgba(0, 0, 0, .07);
+	&:hover {
+		.fonction-icon {
+			color: $primary-color;
+		}
+	}
 }
 
 .fonction-number {
@@ -125,10 +125,6 @@ header {
    font-weight: 900;
    margin-right: 20px;
 
-}
-
-.fonction-step:hover .fonction-icon {
-   color: $primary-color;
 }
 
 
@@ -151,24 +147,23 @@ header {
    border-radius: 15px;
    background-color: $secondary-color;
    text-decoration: none;
-   color: #000;
+   color: $color_3;
    position: relative;
 }
 
 .card-image {
-   display: flex;
-}
-
-.card-image img {
-   width: 100%;
-   object-fit: cover;
-   border-radius: 15px 15px 0 0;
-   height: 175px;
+	display: flex;
+	img {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 15px 15px 0 0;
+		height: 175px;
+	}
 }
 
 .card-new {
-   background-color: #99e2d0;
-   color: #008766;
+   background-color: $background-color_3;
+   color: $color_4;
    border-radius: 3px;
    padding: 6px 12px;
    position: absolute;
@@ -194,17 +189,16 @@ header {
 /***********Footer*************/
 
 .footer {
-   background-color: #353535;
+   background-color: $color_2;
    padding: 20px;
-
-}
-.footer a {
-   color: $secondary-color;
+   a {
+      color: $secondary-color;
+   }
 }
 
 
 .footer-logo {
-   font-family: shrikhand, cursive;
+   font-family: $font-family_2;
 }
 
 
