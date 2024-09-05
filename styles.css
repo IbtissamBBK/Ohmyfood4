@@ -12,6 +12,54 @@ body {
   margin: 0;
 }
 
+/***********Restaurant***********/
+.restaurants {
+  background-color: #f6f6f6;
+  padding: 30px 20px;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurants .card {
+  border-radius: 15px;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+.restaurants .card__image {
+  display: flex;
+}
+.restaurants .card__image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  height: 175px;
+}
+.restaurants .card__new {
+  background-color: #99e2d0;
+  color: #008766;
+  border-radius: 3px;
+  padding: 6px 12px;
+  position: absolute;
+  right: 22px;
+  top: 13px;
+}
+.restaurants .card__content {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 30px 20px 15px;
+  justify-content: space-between;
+}
+.restaurants .card__title {
+  margin: 0;
+}
+.restaurants .card__subtitle {
+  margin: 0;
+}
+
 /***********Header*******/
 .header {
   display: flex;
@@ -106,54 +154,6 @@ body {
 .fonction__icon {
   font-weight: 900;
   margin-right: 20px;
-}
-
-/***********Restaurant***********/
-.restaurants {
-  background-color: #f6f6f6;
-  padding: 30px 20px;
-}
-.restaurants__cards {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.restaurants .card {
-  border-radius: 15px;
-  background-color: #fff;
-  text-decoration: none;
-  color: #000;
-  position: relative;
-}
-.restaurants .card__image {
-  display: flex;
-}
-.restaurants .card__image img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-  height: 175px;
-}
-.restaurants .card__new {
-  background-color: #99e2d0;
-  color: #008766;
-  border-radius: 3px;
-  padding: 6px 12px;
-  position: absolute;
-  right: 22px;
-  top: 13px;
-}
-.restaurants .card__content {
-  display: flex;
-  flex-direction: row;
-  padding: 20px 30px 20px 15px;
-  justify-content: space-between;
-}
-.restaurants .card__title {
-  margin: 0;
-}
-.restaurants .card__subtitle {
-  margin: 0;
 }
 
 /***********Footer*************/
