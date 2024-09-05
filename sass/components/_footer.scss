@@ -1,0 +1,23 @@
+ /***********Footer*************/
+
+ .footer {
+    background-color: $color_2;
+    padding: 20px;
+ 
+    &__logo {
+       font-family: $font-family_2;
+       color: $secondary-color;
+    }
+ 
+    &__list {
+       list-style-type: none;
+       gap: 10px;
+       display: flex;
+       flex-direction: column;
+       padding: 0;
+    }
+ 
+    &__link {
+       color: $secondary-color;
+    }
+ }
