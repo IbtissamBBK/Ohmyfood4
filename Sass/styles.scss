@@ -1,6 +1,9 @@
 @import "utils/variables";
 @import "utils/base";
-@import "utils/restaurants";
+
+@import "components/restaurants";
+@import "components/footer";
+@import "components/header";
 
 
 
@@ -8,6 +11,7 @@
 /*********************Main********************/
 
 /*********Position********/
+
 .position {
    background-color: $background-color_2;
    color: $color_2;
@@ -51,7 +55,7 @@
    padding: 16px 22px;
    border-radius: 25px;
    background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, .07);
+   @include box-shadow;
 }
 
 /*********Fonction***********/
@@ -76,7 +80,7 @@
       border-radius: 20px;
       font-weight: 500;
       padding: 28px 36px;
-      box-shadow: 0 4px 8px 5px rgba(0, 0, 0, .07);
+      @include box-shadow;
 
       &:hover .fonction-icon {
          color: $primary-color;
