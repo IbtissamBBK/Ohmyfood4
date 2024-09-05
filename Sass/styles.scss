@@ -3,23 +3,7 @@
 @import "utils/restaurants";
 
 
-/***********Header*******/
 
-.header {
-   display: flex;
-   justify-content: center;
-   padding: 1rem;
-   align-items: center;
-   background-color: $secondary-color;
-   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-   position: relative;
-
-   &__logo {
-      font-family: $font-family_2;
-      font-size: 30px;
-      color: $color_1;
-   }
-}
 
 /*********************Main********************/
 
@@ -120,26 +104,3 @@
 
 
 
-/***********Footer*************/
-
-.footer {
-   background-color: $color_2;
-   padding: 20px;
-
-   &__logo {
-      font-family: $font-family_2;
-      color: $secondary-color;
-   }
-
-   &__list {
-      list-style-type: none;
-      gap: 10px;
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-   }
-
-   &__link {
-      color: $secondary-color;
-   }
-}
