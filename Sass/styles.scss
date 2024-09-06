@@ -64,6 +64,14 @@
 .fonction {
    padding: 30px 20px;
 
+   &__container {
+
+      @media (min-width: 1024px) {
+         margin: auto;
+         max-width: 1440px;
+
+      }
+   }
 
    &__steps {
       list-style: none;
@@ -73,8 +81,14 @@
       padding: 15px 0 0;
       margin: 0;
       justify-content: space-between;
-   }
+      
 
+      @media (min-width: 1024px) {
+         flex-direction: row;
+         
+      }
+
+   }
 
    &__step {
       background-color: $background-color;
@@ -83,9 +97,9 @@
       padding: 28px 36px;
       @include box-shadow;
 
-      &:hover .fonction-icon {
-         color: $primary-color;
 
+      @media (min-width: 1024px) {
+         width: 100%;   
       }
    }
 
@@ -93,7 +107,7 @@
       background-color: $primary-color;
       color: $secondary-color;
       position: absolute;
-      left: 10px;
+      transform: translateX(-185%);
       padding: 4px 9px;
       border-radius: 50px;
       font-size: 14px;
@@ -107,5 +121,8 @@
    }
 }
 
+.fonction__step:hover {
+   color: #9356DC;
+ }
 
 

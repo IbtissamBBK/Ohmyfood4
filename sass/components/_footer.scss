@@ -3,20 +3,32 @@
  .footer {
     background-color: $color_2;
     padding: 20px;
- 
+
     &__logo {
        font-family: $font-family_2;
        color: $secondary-color;
+       font-size: 20px;
+
+       @media (min-width: 1024px) {
+          display: flex;
+          justify-content: end;
+       }
     }
- 
+
     &__list {
        list-style-type: none;
        gap: 10px;
        display: flex;
        flex-direction: column;
        padding: 0;
+
+       @media (min-width: 1024px) {
+          flex-direction: row;
+          justify-content: flex-end;
+          gap: 20px;
+       }
     }
- 
+
     &__link {
        color: $secondary-color;
     }

@@ -17,10 +17,24 @@ body {
   background-color: #f6f6f6;
   padding: 30px 20px;
 }
+@media (min-width: 1024px) {
+  .restaurants__container {
+    max-width: 1440px;
+    margin: auto;
+  }
+}
 .restaurants__cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (min-width: 1024px) {
+  .restaurants__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 50px;
+    padding: 25px 0 0;
+  }
 }
 .restaurants .card {
   border-radius: 15px;
@@ -37,6 +51,11 @@ body {
   object-fit: cover;
   border-radius: 15px 15px 0 0;
   height: 175px;
+}
+@media (min-width: 1024px) {
+  .restaurants .card__image img {
+    height: 250px;
+  }
 }
 .restaurants .card__new {
   background-color: #99e2d0;
@@ -68,6 +87,13 @@ body {
 .footer__logo {
   font-family: shrikhand, cursive;
   color: #fff;
+  font-size: 20px;
+}
+@media (min-width: 1024px) {
+  .footer__logo {
+    display: flex;
+    justify-content: end;
+  }
 }
 .footer__list {
   list-style-type: none;
@@ -75,6 +101,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0;
+}
+@media (min-width: 1024px) {
+  .footer__list {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
 }
 .footer__link {
   color: #fff;
@@ -143,6 +176,12 @@ body {
 .fonction {
   padding: 30px 20px;
 }
+@media (min-width: 1024px) {
+  .fonction__container {
+    margin: auto;
+    max-width: 1440px;
+  }
+}
 .fonction__steps {
   list-style: none;
   gap: 25px;
@@ -152,6 +191,11 @@ body {
   margin: 0;
   justify-content: space-between;
 }
+@media (min-width: 1024px) {
+  .fonction__steps {
+    flex-direction: row;
+  }
+}
 .fonction__step {
   background-color: #f6f6f6;
   border-radius: 20px;
@@ -159,14 +203,16 @@ body {
   padding: 28px 36px;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
-.fonction__step:hover .fonction-icon {
-  color: #9356DC;
+@media (min-width: 1024px) {
+  .fonction__step {
+    width: 100%;
+  }
 }
 .fonction__number {
   background-color: #9356DC;
   color: #fff;
   position: absolute;
-  left: 10px;
+  transform: translateX(-185%);
   padding: 4px 9px;
   border-radius: 50px;
   font-size: 14px;
@@ -174,6 +220,10 @@ body {
 .fonction__icon {
   font-weight: 900;
   margin-right: 20px;
+}
+
+.fonction__step:hover {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=styles.css.map */
