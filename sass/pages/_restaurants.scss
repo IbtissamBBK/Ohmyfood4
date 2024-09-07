@@ -1,0 +1,16 @@
+@import "components/header";
+@import "components/footer";
+@import "utils/variables";
+@import "utils/base";
+@import "utils/mixin";
+
+
+.header {
+    
+    &__arrow {
+        position: absolute;
+        color: $color-dark_grey;
+        font-size: 18px;
+        left: 25px;
+    }
+}
