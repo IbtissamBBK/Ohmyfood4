@@ -42,6 +42,7 @@ body {
   text-decoration: none;
   color: #000;
   position: relative;
+  box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
 .restaurants .card__image {
   display: flex;
@@ -203,6 +204,9 @@ body {
   padding: 28px 36px;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
+.fonction__step:hover {
+  color: #9356DC;
+}
 @media (min-width: 1024px) {
   .fonction__step {
     width: 100%;
@@ -220,10 +224,6 @@ body {
 .fonction__icon {
   font-weight: 900;
   margin-right: 20px;
-}
-
-.fonction__step:hover {
-  color: #9356DC;
 }
 
 /*# sourceMappingURL=styles.css.map */
