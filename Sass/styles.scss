@@ -2,7 +2,7 @@
 @import "utils/base";
 @import "utils/mixin";
 
-@import "components/cardsresto";
+@import "components/cards";
 @import "components/footer";
 @import "components/header";
 
@@ -59,6 +59,8 @@
    border-radius: 25px;
    background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
    @include box-shadow;
+
+
 }
 
 /*********Fonction***********/
