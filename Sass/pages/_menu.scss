@@ -45,6 +45,30 @@
         }
     }
 
+    &__icon {
+        &:hover .heart-hover {
+            opacity: 1;
+        }
+
+        &:hover .heart {
+            opacity: 0;
+        }
+
+        .heart {
+            position: absolute;
+        }
+
+        .heart-hover {
+            color: transparent;
+            background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+            background-clip: text;
+            transition: all 200ms ease-in-out;
+            opacity: 0;
+        }
+
+    }
+
+
     &__title {
 
         font-family: $font-family_2;
@@ -61,7 +85,7 @@
     &__lists {
         display: flex;
         flex-direction: column;
-        
+
         @media (min-width: 1024px) {
 
             margin-left: 12em;
