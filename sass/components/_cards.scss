@@ -36,6 +36,32 @@
       position: relative;
       @include box-shadow;
 
+      &__icon {
+
+         font-size: 30px;
+      
+         &:hover .heart-hover {
+            opacity: 1;
+         }
+         
+         &:hover .heart {
+            opacity: 0;
+         }
+         
+         .heart {
+            position: absolute;
+         } 
+         
+         .heart-hover {
+            color: transparent;
+            background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+            background-clip: text;
+            transition: all 200ms ease-in-out;
+            opacity: 0;
+         }
+      
+      }
+
 
       &__image {
          display: flex;
@@ -78,30 +104,6 @@
          margin: 0;
       }
 
-   }
-
-}
-
-
-.card__icon {
-   &:hover .heart-hover {
-      opacity: 1;
-   }
-   
-   &:hover .heart {
-      opacity: 0;
-   }
-   
-   .heart {
-      position: absolute;
-   } 
-   
-   .heart-hover {
-      color: transparent;
-      background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-      background-clip: text;
-      transition: all 200ms ease-in-out;
-      opacity: 0;
    }
 
 }

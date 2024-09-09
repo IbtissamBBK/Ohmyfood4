@@ -46,6 +46,8 @@
     }
 
     &__icon {
+        font-size: 30px;
+
         &:hover .heart-hover {
             opacity: 1;
         }
@@ -65,9 +67,7 @@
             transition: all 200ms ease-in-out;
             opacity: 0;
         }
-
     }
-
 
     &__title {
 
