@@ -62,7 +62,7 @@
 
         .heart-hover {
             color: transparent;
-            background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+            background: $background-color_4;
             background-clip: text;
             transition: all 200ms ease-in-out;
             opacity: 0;
@@ -77,10 +77,6 @@
 
     }
 
-    &__icon {
-        font-size: 24px;
-        margin-right: 15px;
-    }
 
     &__lists {
         display: flex;
@@ -121,9 +117,13 @@
         padding: 15.5px 48.5px;
         color: $secondary-color;
         border-radius: 25px;
-        background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        background: $background-color_4;
         @include box-shadow;
         border: none;
+
+        &:hover {
+            @include hover-effect;
+        }
 
     }
 }
@@ -174,8 +174,8 @@
 
     &__order {
         position: absolute;
-        background-color: #99E2D0;
-        color: #fff;
+        background-color: $color_7;
+        color: $color_5;
         font-size: 18px;
         padding: 18px;
         right: 0px;

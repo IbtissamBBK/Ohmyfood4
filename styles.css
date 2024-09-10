@@ -15,7 +15,7 @@ body {
 /***********Restaurant***********/
 .restaurants {
   background-color: #f6f6f6;
-  padding: 30px 20px;
+  padding: 10px 20px 70px 20px;
 }
 @media (min-width: 1024px) {
   .restaurants__container {
@@ -44,8 +44,13 @@ body {
   position: relative;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
+.restaurants .card:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
 .restaurants .card__icon {
   font-size: 30px;
+  margin-right: 20px;
 }
 .restaurants .card__icon:hover .heart-hover {
   opacity: 1;
@@ -62,6 +67,7 @@ body {
   background-clip: text;
   transition: all 200ms ease-in-out;
   opacity: 0;
+  position: absolute;
 }
 .restaurants .card__image {
   display: flex;
@@ -210,10 +216,6 @@ body {
   font-size: 24px;
   color: #101010;
 }
-.menu__icon {
-  font-size: 24px;
-  margin-right: 15px;
-}
 .menu__lists {
   display: flex;
   flex-direction: column;
@@ -252,6 +254,10 @@ body {
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
   border: none;
 }
+.menu__cmd:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
 
 .list {
   background-color: #fff;
@@ -288,7 +294,7 @@ body {
 }
 .list__order {
   position: absolute;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   color: #fff;
   font-size: 18px;
   padding: 18px;
@@ -355,6 +361,10 @@ body {
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
+.btn:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
 
 /*********Fonction***********/
 .fonction {
@@ -388,6 +398,9 @@ body {
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
 .fonction__step:hover {
+  background-color: #F5EDFF;
+  filter: opacity 2;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
   color: #9356DC;
 }
 @media (min-width: 1024px) {
