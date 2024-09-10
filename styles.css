@@ -49,16 +49,17 @@ body {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
 }
 .restaurants .card__icon {
-  font-size: 30px;
+  position: relative;
+  font-size: 24px;
 }
 .restaurants .card__icon .heart-checkbox {
   display: none;
 }
 .restaurants .card__icon .heart,
 .restaurants .card__icon .heart-hover {
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 0.3s ease;
   position: absolute;
-  right: 30px;
+  right: -5px;
 }
 .restaurants .card__icon .heart-hover {
   opacity: 0;
@@ -69,11 +70,11 @@ body {
 .restaurants .card__icon__heart {
   opacity: 1;
 }
-.restaurants .card__icon .heart-checkbox:checked + label .heart {
-  opacity: 0;
-}
-.restaurants .card__icon .heart-checkbox:checked + label .heart-hover {
+.restaurants .card__icon .heart-checkbox:checked ~ .heart-hover {
   opacity: 1;
+}
+.restaurants .card__icon .heart-checkbox:checked ~ .heart {
+  opacity: 0;
 }
 .restaurants .card__image {
   display: flex;
@@ -208,7 +209,16 @@ body {
 .menu__icon .heart-hover {
   transition: opacity 200ms ease-in-out;
   position: absolute;
-  top: 40px;
+  right: 35px;
+  top: 38px;
+}
+@media (min-width: 1024px) {
+  .menu__icon .heart,
+  .menu__icon .heart-hover {
+    position: absolute;
+    top: 38px;
+    right: auto;
+  }
 }
 .menu__icon .heart-hover {
   opacity: 0;
@@ -219,11 +229,11 @@ body {
 .menu__icon__heart {
   opacity: 1;
 }
-.menu__icon .heart-checkbox:checked + label .heart {
-  opacity: 0;
-}
-.menu__icon .heart-checkbox:checked + label .heart-hover {
+.menu__icon .heart-checkbox:checked ~ .heart-hover {
   opacity: 1;
+}
+.menu__icon .heart-checkbox:checked ~ .heart {
+  opacity: 0;
 }
 .menu__title {
   font-family: shrikhand, cursive;
