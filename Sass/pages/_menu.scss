@@ -48,25 +48,39 @@
     &__icon {
         font-size: 30px;
 
-        &:hover .heart-hover {
-            opacity: 1;
+
+        .heart-checkbox {
+            display: none;
         }
 
-        &:hover .heart {
-            opacity: 0;
-        }
-
-        .heart {
-            position: absolute;
-        }
-
+        .heart,
         .heart-hover {
+            transition: opacity 200ms ease-in-out;
+            position: absolute;
+            top: 40px;
+            
+          
+       }
+    
+        .heart-hover {
+            opacity: 0;
             color: transparent;
             background: $background-color_4;
             background-clip: text;
-            transition: all 200ms ease-in-out;
+        }
+
+        &__heart {
+            opacity: 1;
+        }
+    
+        .heart-checkbox:checked + label .heart {
             opacity: 0;
         }
+    
+        .heart-checkbox:checked + label .heart-hover {
+            opacity: 1;
+        }
+    
     }
 
     &__title {
