@@ -1,12 +1,14 @@
+@import "base/base";
+
 @import "utils/variables";
-@import "utils/base";
 @import "utils/mixin";
 
-@import "components/cards";
-@import "components/footer";
-@import "components/header";
+@import "layouts/container";
+@import "layouts/footer";
+@import "layouts/header";
 
 @import "pages/menu";
+
 
 
 
@@ -19,9 +21,8 @@
    background-color: $background-color_2;
    color: $color_2;
    padding: 1rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   @include flexbox-center;
+
 
 
    &__icon {
