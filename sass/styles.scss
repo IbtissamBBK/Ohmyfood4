@@ -1,3 +1,4 @@
+
 @import "base/base";
 
 @import "utils/variables";
@@ -9,8 +10,7 @@
 
 @import "pages/menu";
 
-
-
+@import "components/button";
 
 
 /*********************Main********************/
@@ -57,19 +57,6 @@
    }
 }
 
-.btn {
-   color: $secondary-color;
-   font-weight: 400;
-   padding: 16px 22px;
-   border-radius: 25px;
-   background: $background-color_4;
-   @include box-shadow;
-
-   &:hover {
-      @include hover-effect;
-   }
-
-}
 
 /*********Fonction***********/
 

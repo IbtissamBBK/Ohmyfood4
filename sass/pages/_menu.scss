@@ -45,49 +45,6 @@
         }
     }
 
-    &__icon {
-        font-size: 32px;
-
-
-        .heart-checkbox {
-            display: none;
-        }
-
-        .heart,
-        .heart-hover {
-            transition: opacity 200ms ease-in-out;
-            position: absolute;
-            right: 35px;
-            top: 38px;
-
-            @media (min-width: 1024px) {
-                position: absolute;
-                top: 38px;
-                right: auto
-            }
-        }
-
-        .heart-hover {
-            opacity: 0;
-            color: transparent;
-            background: $background-color_4;
-            background-clip: text;
-        }
-
-        &__heart {
-            opacity: 1;
-        }
-
-
-        .heart-checkbox:checked~.heart-hover {
-            opacity: 1;
-        }
-
-        .heart-checkbox:checked~.heart {
-            opacity: 0;
-        }
-
-    }
 
     &__title {
 
