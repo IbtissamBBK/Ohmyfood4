@@ -9,7 +9,7 @@
        color: $secondary-color;
        font-size: 20px;
 
-       @media (min-width: 1024px) {
+       @include respond-to($desktop) {
           display: flex;
           justify-content: end;
        }
@@ -22,7 +22,7 @@
        flex-direction: column;
        padding: 0;
 
-       @media (min-width: 1024px) {
+       @include respond-to($desktop) {
           flex-direction: row;
           justify-content: flex-end;
           gap: 20px;

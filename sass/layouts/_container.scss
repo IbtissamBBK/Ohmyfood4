@@ -20,7 +20,7 @@
       gap: 20px;
 
 
-      @media (min-width: 1024px) {
+      @include respond-to($desktop) {
          display: grid;
          grid-template-columns: 1fr 1fr;
          gap: 50px 50px;
