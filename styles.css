@@ -308,12 +308,6 @@ body {
   right: 18px;
   bottom: 54px;
 }
-@media (min-width: 1024px) {
-  .card__icon .heart,
-  .card__icon .heart-hover {
-    position: absolute;
-  }
-}
 .card__icon .heart-hover {
   opacity: 0;
   color: transparent;
