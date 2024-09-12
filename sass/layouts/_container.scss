@@ -7,10 +7,11 @@
 
    &__container {
 
-      @media (min-width: 1024px) {
+      @include respond-to($desktop) {
          max-width: 1440px;
          margin: auto;
       }
+
    }
 
 
@@ -33,6 +34,7 @@
       &:hover {
          @include hover-effect;
          border-radius: 0px 0px 15px 15px;
+         transition: .3s;
 
       }
    }
@@ -47,6 +49,7 @@
          color: $color_3;
          position: relative;
          @include box-shadow;
+         
 
       }
 

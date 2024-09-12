@@ -38,12 +38,13 @@
         justify-content: space-between;
         align-items: center;
 
-        @include respond-to($desktop){
+        @include respond-to($desktop) {
             justify-content: center;
             gap: 24px;
-
         }
+
     }
+
 
 
     &__title {
@@ -53,6 +54,8 @@
         color: $color_1;
 
     }
+
+
 
     &__icon {
         font-size: 32px;
@@ -72,7 +75,7 @@
             @include respond-to($desktop) {
                 position: absolute;
                 top: 38px;
-                right: auto
+                right: auto;
             }
         }
 
@@ -99,17 +102,17 @@
 
 
 
+
     &__lists {
         display: flex;
         flex-direction: column;
-        
-        
 
         @include respond-to($desktop) {
 
             margin-left: 12em;
             margin-right: 12em;
         }
+
     }
 
     & h3 {
@@ -143,13 +146,14 @@
         background: $background-color_4;
         @include box-shadow;
         border: none;
+        transition: .3s;
 
         &:hover {
             @include hover-effect;
         }
-
     }
 }
+
 
 
 .list {
@@ -163,9 +167,12 @@
     justify-content: space-between;
     position: relative;
     @include box-shadow;
-    animation: 1s ease both;
+    animation: menu-list 2s ease both;
     @include list-delay;
-    
+
+    &:first-child {
+        margin-left: 0;
+    }
 
 
     &__content,
@@ -173,14 +180,12 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        
 
     }
 
 
     &__title {
         margin: 0;
-        
 
     }
 
