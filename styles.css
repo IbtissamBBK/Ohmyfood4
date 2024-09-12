@@ -2,6 +2,7 @@
 /****************Général****************/
 * {
   font-family: roboto, sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -36,20 +37,22 @@ body {
     padding: 25px 0 0;
   }
 }
-.restaurants .card {
-  border-radius: 15px;
+.restaurants article:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 0px 15px 15px;
+}
+.restaurants .card__content {
+  border-radius: 0px 0px 15px 15px;
   background-color: #fff;
   text-decoration: none;
   color: #000;
   position: relative;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
 }
-.restaurants .card:hover {
-  filter: brightness(1.1);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
-}
 .restaurants .card__image {
   display: flex;
+  justify-content: end;
 }
 .restaurants .card__image img {
   width: 100%;
@@ -62,14 +65,42 @@ body {
     height: 250px;
   }
 }
+.restaurants .card__icon {
+  position: relative;
+  font-size: 24px;
+}
+.restaurants .card__icon .heart-checkbox {
+  display: none;
+}
+.restaurants .card__icon .heart,
+.restaurants .card__icon .heart-hover {
+  transition: opacity 0.3s ease;
+  position: absolute;
+  right: 16px;
+  bottom: 36px;
+}
+.restaurants .card__icon .heart-hover {
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-clip: text;
+}
+.restaurants .card__icon__heart {
+  opacity: 1;
+}
+.restaurants .card__icon .heart-checkbox:checked ~ .heart-hover {
+  opacity: 1;
+}
+.restaurants .card__icon .heart-checkbox:checked ~ .heart {
+  opacity: 0;
+}
 .restaurants .card__new {
   background-color: #99e2d0;
   color: #008766;
   border-radius: 3px;
   padding: 6px 12px;
   position: absolute;
-  right: 22px;
-  top: 13px;
+  margin: 15px;
 }
 .restaurants .card__content {
   display: flex;
@@ -176,6 +207,42 @@ body {
   font-size: 24px;
   color: #101010;
 }
+.menu__icon {
+  font-size: 32px;
+}
+.menu__icon .heart-checkbox {
+  display: none;
+}
+.menu__icon .heart,
+.menu__icon .heart-hover {
+  transition: opacity 200ms ease-in-out;
+  position: absolute;
+  right: 35px;
+  top: 38px;
+}
+@media (min-width: 1024px) {
+  .menu__icon .heart,
+  .menu__icon .heart-hover {
+    position: absolute;
+    top: 38px;
+    right: auto;
+  }
+}
+.menu__icon .heart-hover {
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-clip: text;
+}
+.menu__icon__heart {
+  opacity: 1;
+}
+.menu__icon .heart-checkbox:checked ~ .heart-hover {
+  opacity: 1;
+}
+.menu__icon .heart-checkbox:checked ~ .heart {
+  opacity: 0;
+}
 .menu__lists {
   display: flex;
   flex-direction: column;
@@ -229,6 +296,37 @@ body {
   justify-content: space-between;
   position: relative;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
+  animation: 1s ease both;
+}
+.list:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.list:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.list:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.list:nth-child(4) {
+  animation-delay: 1.2s;
+}
+.list:nth-child(5) {
+  animation-delay: 1.5s;
+}
+.list:nth-child(6) {
+  animation-delay: 1.8s;
+}
+.list:nth-child(7) {
+  animation-delay: 2.1s;
+}
+.list:nth-child(8) {
+  animation-delay: 2.4s;
+}
+.list:nth-child(9) {
+  animation-delay: 2.7s;
+}
+.list:nth-child(10) {
+  animation-delay: 3s;
 }
 .list__content, .list__title {
   white-space: nowrap;
@@ -291,75 +389,6 @@ body {
 .btn:hover {
   filter: brightness(1.1);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
-}
-
-/*********button card heart*********/
-.card__icon {
-  position: absolute;
-  font-size: 24px;
-}
-.card__icon .heart-checkbox {
-  display: none;
-}
-.card__icon .heart,
-.card__icon .heart-hover {
-  transition: opacity 0.3s ease;
-  position: absolute;
-  right: 18px;
-  bottom: 54px;
-}
-.card__icon .heart-hover {
-  opacity: 0;
-  color: transparent;
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  background-clip: text;
-}
-.card__icon__heart {
-  opacity: 1;
-}
-.card__icon .heart-checkbox:checked ~ .heart-hover {
-  opacity: 1;
-}
-.card__icon .heart-checkbox:checked ~ .heart {
-  opacity: 0;
-}
-
-/*************button menu*************/
-.menu__icon {
-  font-size: 32px;
-}
-.menu__icon .heart-checkbox {
-  display: none;
-}
-.menu__icon .heart,
-.menu__icon .heart-hover {
-  transition: opacity 200ms ease-in-out;
-  position: absolute;
-  right: 35px;
-  top: 38px;
-}
-@media (min-width: 1024px) {
-  .menu__icon .heart,
-  .menu__icon .heart-hover {
-    position: absolute;
-    top: 38px;
-    right: auto;
-  }
-}
-.menu__icon .heart-hover {
-  opacity: 0;
-  color: transparent;
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-  background-clip: text;
-}
-.menu__icon__heart {
-  opacity: 1;
-}
-.menu__icon .heart-checkbox:checked ~ .heart-hover {
-  opacity: 1;
-}
-.menu__icon .heart-checkbox:checked ~ .heart {
-  opacity: 0;
 }
 
 /*********************Main********************/

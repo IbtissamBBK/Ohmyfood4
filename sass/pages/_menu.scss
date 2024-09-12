@@ -54,10 +54,56 @@
 
     }
 
+    &__icon {
+        font-size: 32px;
+
+
+        .heart-checkbox {
+            display: none;
+        }
+
+        .heart,
+        .heart-hover {
+            transition: opacity 200ms ease-in-out;
+            position: absolute;
+            right: 35px;
+            top: 38px;
+
+            @include respond-to($desktop) {
+                position: absolute;
+                top: 38px;
+                right: auto
+            }
+        }
+
+        .heart-hover {
+            opacity: 0;
+            color: transparent;
+            background: $background-color_4;
+            background-clip: text;
+        }
+
+        &__heart {
+            opacity: 1;
+        }
+
+
+        .heart-checkbox:checked~.heart-hover {
+            opacity: 1;
+        }
+
+        .heart-checkbox:checked~.heart {
+            opacity: 0;
+        }
+    }
+
+
 
     &__lists {
         display: flex;
         flex-direction: column;
+        
+        
 
         @include respond-to($desktop) {
 
@@ -105,6 +151,7 @@
     }
 }
 
+
 .list {
 
     background-color: $color_5;
@@ -116,7 +163,9 @@
     justify-content: space-between;
     position: relative;
     @include box-shadow;
-
+    animation: 1s ease both;
+    @include list-delay;
+    
 
 
     &__content,
@@ -124,12 +173,14 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        
 
     }
 
 
     &__title {
         margin: 0;
+        
 
     }
 
