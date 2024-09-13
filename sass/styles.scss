@@ -71,6 +71,10 @@
             max-width: 1440px;
 
         }
+
+        @media (min-width: 767px){
+            margin: 10px 40px;
+        }
     }
 
     &__steps {

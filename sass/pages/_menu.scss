@@ -27,10 +27,13 @@
     margin-top: -50px;
     padding: 1em;
 
+
     @include respond-to($desktop) {
         margin-left: 16%;
         margin-right: 16%;
     }
+
+
 
     &__header {
 
@@ -43,6 +46,9 @@
             gap: 24px;
         }
 
+        @media (min-width: 767px) {
+            margin: 10px 40px;
+        }
     }
 
 
@@ -58,8 +64,8 @@
 
 
     &__icon {
-        font-size: 32px;
 
+        font-size: 28px;
 
         .heart-checkbox {
             display: none;
@@ -77,6 +83,15 @@
                 top: 38px;
                 right: auto;
             }
+
+
+            @media (min-width: 767px) {
+                margin-right: 25px;
+                margin-top: 10px;
+
+            }
+
+
         }
 
         .heart-hover {
@@ -111,6 +126,10 @@
 
             margin-left: 12em;
             margin-right: 12em;
+        }
+
+        @media (min-width: 767px) {
+            margin: 10px 40px;
         }
 
     }

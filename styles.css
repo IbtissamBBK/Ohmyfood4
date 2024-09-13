@@ -34,6 +34,11 @@ body {
     margin: auto;
   }
 }
+@media (min-width: 767px) {
+  .restaurants__container {
+    margin: 10px 40px;
+  }
+}
 .restaurants__cards {
   display: flex;
   flex-direction: column;
@@ -213,13 +218,18 @@ body {
     gap: 24px;
   }
 }
+@media (min-width: 767px) {
+  .menu__header {
+    margin: 10px 40px;
+  }
+}
 .menu__title {
   font-family: shrikhand, cursive;
   font-size: 24px;
   color: #101010;
 }
 .menu__icon {
-  font-size: 32px;
+  font-size: 28px;
 }
 .menu__icon .heart-checkbox {
   display: none;
@@ -237,6 +247,13 @@ body {
     position: absolute;
     top: 38px;
     right: auto;
+  }
+}
+@media (min-width: 767px) {
+  .menu__icon .heart,
+  .menu__icon .heart-hover {
+    margin-right: 25px;
+    margin-top: 10px;
   }
 }
 .menu__icon .heart-hover {
@@ -262,6 +279,11 @@ body {
   .menu__lists {
     margin-left: 12em;
     margin-right: 12em;
+  }
+}
+@media (min-width: 767px) {
+  .menu__lists {
+    margin: 10px 40px;
   }
 }
 .menu h3 {
@@ -454,6 +476,11 @@ body {
   .fonction__container {
     margin: auto;
     max-width: 1440px;
+  }
+}
+@media (min-width: 767px) {
+  .fonction__container {
+    margin: 10px 40px;
   }
 }
 .fonction__steps {
