@@ -7,10 +7,12 @@
     border-radius: 25px;
     background: $background-color_4;
     @include box-shadow;
-    transition: .4s;
+    transition: .3s ease-in-out;
 
     &:hover {
         @include hover-effect;
+        
+
     }
 
 }

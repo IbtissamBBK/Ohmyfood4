@@ -34,7 +34,7 @@ body {
     margin: auto;
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 768px) {
   .restaurants__container {
     margin: 10px 40px;
   }
@@ -53,10 +53,9 @@ body {
   }
 }
 .restaurants article:hover {
-  filter: brightness(1.1);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 15px 15px;
   transition: 0.3s;
+  transform: scale(0.95);
 }
 .restaurants .card__content {
   border-radius: 0px 0px 15px 15px;
@@ -218,7 +217,7 @@ body {
     gap: 24px;
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 768px) {
   .menu__header {
     margin: 10px 40px;
   }
@@ -249,7 +248,7 @@ body {
     right: auto;
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 768px) {
   .menu__icon .heart,
   .menu__icon .heart-hover {
     margin-right: 25px;
@@ -281,7 +280,7 @@ body {
     margin-right: 12em;
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 768px) {
   .menu__lists {
     margin: 10px 40px;
   }
@@ -318,6 +317,7 @@ body {
 .menu__cmd:hover {
   filter: brightness(1.1);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+  transform: scale(0.95);
 }
 
 .list {
@@ -399,10 +399,6 @@ body {
   transform: translateX(60px);
   transition: 0.5s ease-in-out;
 }
-.list__icon {
-  transform: rotate(0deg);
-  transition: 0.5s ease-in-out;
-}
 .list:hover {
   cursor: pointer;
 }
@@ -422,7 +418,7 @@ body {
   border-radius: 25px;
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
-  transition: 0.4s;
+  transition: 0.3s ease-in-out;
 }
 .btn:hover {
   filter: brightness(1.1);
@@ -478,7 +474,7 @@ body {
     max-width: 1440px;
   }
 }
-@media (min-width: 767px) {
+@media (max-width: 768px) {
   .fonction__container {
     margin: 10px 40px;
   }
@@ -503,13 +499,13 @@ body {
   font-weight: 500;
   padding: 28px 36px;
   box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.07);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 .fonction__step:hover {
   background-color: #f3eff7;
   opacity: 1;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
   color: #9356DC;
+  transform: scale(0.95);
 }
 @media (min-width: 1024px) {
   .fonction__step {
