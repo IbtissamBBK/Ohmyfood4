@@ -12,7 +12,7 @@
          margin: auto;
       }
 
-      @media (min-width: 767px){
+      @media (max-width: 768px){
          margin: 10px 40px;
      }
 
@@ -36,9 +36,10 @@
    
    article {
       &:hover {
-         @include hover-effect;
+         
          border-radius: 0px 0px 15px 15px;
          transition: .3s;
+         transform: scale(.95);
 
       }
    }
@@ -54,7 +55,6 @@
          position: relative;
          @include box-shadow;
          
-
       }
 
       &__image {
