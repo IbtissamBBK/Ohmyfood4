@@ -55,7 +55,7 @@ body {
 .restaurants article:hover {
   border-radius: 0px 0px 15px 15px;
   transition: 0.3s;
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 .restaurants .card__content {
   border-radius: 0px 0px 15px 15px;
@@ -317,7 +317,6 @@ body {
 .menu__cmd:hover {
   filter: brightness(1.1);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
-  transform: scale(0.95);
 }
 
 .list {
@@ -361,9 +360,6 @@ body {
 }
 .list:nth-child(10) {
   animation-delay: 3s;
-}
-.list:first-child {
-  margin-left: 0;
 }
 .list__content, .list__title, .list__subtitle {
   white-space: nowrap;

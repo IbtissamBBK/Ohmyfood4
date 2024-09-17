@@ -169,7 +169,7 @@
 
         &:hover {
             @include hover-effect;
-            transform: scale(.95);
+            
         }
     }
 }
@@ -190,13 +190,7 @@
     animation: menu-list 2s ease both;
     @include list-delay;
     
-
-
-    &:first-child {
-        margin-left: 0;
-    }
-
-
+    
     &__content,
     &__title,
     &__subtitle {
