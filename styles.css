@@ -34,7 +34,7 @@ body {
     margin: auto;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .restaurants__container {
     margin: 10px 40px;
   }
@@ -280,7 +280,7 @@ body {
     margin-right: 12em;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .menu__lists {
     margin: 10px 40px;
   }
@@ -365,7 +365,7 @@ body {
 .list:first-child {
   margin-left: 0;
 }
-.list__content, .list__title {
+.list__content, .list__title, .list__subtitle {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -474,7 +474,7 @@ body {
     max-width: 1440px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .fonction__container {
     margin: 10px 40px;
   }

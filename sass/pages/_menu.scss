@@ -128,7 +128,7 @@
             margin-right: 12em;
         }
 
-        @media (max-width: 768px) {
+        @media (min-width: 600px) and (max-width: 1023px) {
             margin: 10px 40px;
         }
 
@@ -198,7 +198,8 @@
 
 
     &__content,
-    &__title {
+    &__title,
+    &__subtitle {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;

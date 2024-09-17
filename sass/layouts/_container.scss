@@ -12,7 +12,7 @@
          margin: auto;
       }
 
-      @media (max-width: 768px){
+      @media (min-width: 600px) and (max-width: 1023px){
          margin: 10px 40px;
      }
 
