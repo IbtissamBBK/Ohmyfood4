@@ -65,7 +65,6 @@
 .fonction {
     padding: 30px 20px;
     
-
     &__container {
 
         @include respond-to($desktop) {
