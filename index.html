@@ -17,6 +17,13 @@
 </head>
 
 <body>
+  <div class="loader">
+    <div class="loader__container">
+      <div class="loader__item"></div>
+      <div class="loader__item"></div>
+      <div class="loader__item"></div>
+    </div>
+  </div>
 
   <header class="header">
     <a href="index.html" class="header__logo">ohmyfood</a>
@@ -25,7 +32,9 @@
   <main>
     <div class="position">
       <i class="position__icon fa-sharp fa-solid fa-location-dot"></i>
-      <span class="position__text">Paris, Belleville</span>
+      <form class="recherche" method="get">
+        <input type="text" name="search" placeholder="Paris, Belleville">
+      </form>
     </div>
 
     <section class="intro">

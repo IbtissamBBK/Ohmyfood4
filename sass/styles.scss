@@ -7,6 +7,7 @@
 @import "layouts/container";
 @import "layouts/footer";
 @import "layouts/header";
+@import "layouts/loader";
 
 @import "pages/menu";
 
@@ -27,12 +28,20 @@
 
     &__icon {
         font-weight: 900;
-        margin-right: 15px;
+        margin-left: 28px;
+
     }
 
-    &__text {
+    input[type="text"] {    
+        color: $color_3;
         font-size: 16px;
-        font-weight: 500;
+        font-weight: 700;
+        background-color: $background-color_2;
+        border: none;
+        outline: none;
+        text-align: center;
+        width: 80%;
+
     }
 }
 

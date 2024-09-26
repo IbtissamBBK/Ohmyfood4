@@ -15,11 +15,11 @@
 
 @mixin respond-to($desktop) {
     @media (min-width: 1024px) {
-      @content;
+        @content;
     }
-  }
+}
 
-  @mixin list-delay {
+@mixin list-delay {
     @for $i from 1 through 10 {
         &:nth-child(#{$i}) {
             animation-delay: #{$i * 0.3}s;
