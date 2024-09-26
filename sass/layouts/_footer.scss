@@ -4,6 +4,16 @@
     background-color: $color_2;
     padding: 20px;
 
+    &__container {
+       @include respond-to($desktop) {
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: baseline;
+          gap: 15px;
+       }
+
+    }
+
     &__logo {
        font-family: $font-family_2;
        color: $secondary-color;
